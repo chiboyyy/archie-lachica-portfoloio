@@ -87,7 +87,6 @@ header {
   color: var(--accent);
 }
 
-
 .home {
   text-align: center;
 }
@@ -101,7 +100,6 @@ header {
   margin-bottom: 1rem;
 }
 
-
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -113,7 +111,6 @@ header {
   padding: 1rem;
   border-radius: 10px;
 }
-
 
 .project-card {
   background: var(--card);
@@ -129,11 +126,11 @@ header {
   border: 1px solid #ccc;
 }
 
-
 .contact-form {
   display: grid;
   gap: 0.8rem;
   max-width: 500px;
+  margin-top: 1rem;
 }
 
 .contact-form input,
@@ -150,6 +147,11 @@ header {
   padding: 0.7rem;
   border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #1d4ed8;
 }
 
 footer {
@@ -200,7 +202,6 @@ footer {
   </div>
 </section>
 
-
 <section id="projects" class="section">
   <h2>Projects</h2>
 
@@ -218,8 +219,17 @@ footer {
 
 <section id="contact" class="section">
   <h2>Contact</h2>
+
   <p>Email: <strong>Archielachica17@gmail.com</strong></p>
   <p>GitHub: <a href="https://github.com/archielachica17" target="_blank">github.com/archielachica17</a></p>
+
+  <!-- Contact Form -->
+  <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 <footer>
@@ -245,7 +255,6 @@ toggleBtn.onclick = () => {
 
 </body>
 </html>
-
 
 
 
