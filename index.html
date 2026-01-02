@@ -126,6 +126,35 @@ header {
   border: 1px solid #ccc;
 }
 
+/* GALLERY */
+.gallery {
+  margin-top: 2rem;
+}
+
+.gallery h3 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
 /* CONTACT */
 .contact-links {
   background: var(--card);
@@ -214,6 +243,15 @@ footer {
     problem-solving skills. I am eager to learn new technologies and apply them to
     practical and meaningful projects.
   </p>
+
+  <div class="gallery">
+    <h3>A Few Snaps to Know Me Better</h3>
+    <div class="gallery-grid">
+      <img src="archie1.jpg" alt="Personal photo 1">
+      <img src="archie3.jpg" alt="Sunset photo">
+      <img src="archie4.jpg" alt="Personal photo 2">
+    </div>
+  </div>
 </section>
 
 <section id="skills" class="section">
@@ -293,7 +331,6 @@ toggleBtn.onclick = () => {
 </body>
 </html>
 
-</html>
 
 
 
